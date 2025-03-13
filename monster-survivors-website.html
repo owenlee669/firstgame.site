@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors - Survive the Monster Apocalypse</title>
+    <meta name="description" content="Play Monster Survivors online - a thrilling survival game where you battle hordes of monsters to stay alive as long as possible.">
+    <link rel="canonical" href="https://firstgame.site" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --apple-blue: #007AFF;
+            --apple-green: #34C759;
+            --apple-red: #FF3B30;
+            --apple-orange: #FF9500;
+            --apple-purple: #AF52DE;
+            --apple-gray: #8E8E93;
+            --apple-dark: #1C1C1E;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #F2F2F7;
+            color: #1C1C1E;
+        }
+        
+        .apple-blue {
+            color: var(--apple-blue);
+        }
+        
+        .bg-apple-blue {
+            background-color: var(--apple-blue);
+        }
+        
+        .game-container {
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .feature-card {
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl font-bold text-gray-900">Monster Survivors</h1>
+                <p class="text-lg text-gray-600 mt-2">Survive the monster apocalypse in this thrilling online adventure!</p>
+            </div>
+            <div>
+                <button class="bg-apple-blue text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">Play Now</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+            <div class="game-container mb-4">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" allow="fullscreen" title="Monster Survivors Game"></iframe>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm">
+                <p class="text-sm text-gray-500">Having trouble? Make sure your browser supports HTML5 and WebGL.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2" style="color: var(--apple-blue);">Game Overview</h2>
+            <div class="prose max-w-none">
+                <p class="mb-4">Monster Survivors is an action-packed survival game where your goal is simple: stay alive as long as possible while battling endless waves of monsters. As you progress, you'll unlock powerful upgrades, discover new weapons, and face increasingly difficult challenges.</p>
+                <p class="mb-4">The game features a unique progression system where every run makes you stronger, even if you don't survive. Collect experience, upgrade your character, and push further into the monster-infested world with each attempt.</p>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2" style="color: var(--apple-green);">Game Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card bg-white p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2" style="color: var(--apple-red);">Endless Gameplay</h3>
+                    <p>No two games are the same with procedurally generated levels and enemy spawns that keep the action fresh and exciting.</p>
+                </div>
+                <div class="feature-card bg-white p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2" style="color: var(--apple-orange);">Character Progression</h3>
+                    <p>Level up your character, unlock new abilities, and discover powerful synergies between different upgrades.</p>
+                </div>
+                <div class="feature-card bg-white p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2" style="color: var(--apple-purple);">Monster Variety</h3>
+                    <p>Face dozens of unique monster types, each with their own attack patterns and behaviors to master.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2" style="color: var(--apple-orange);">How to Play</h2>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Use <strong>WASD</strong> or <strong>arrow keys</strong> to move your character</li>
+                    <li>Your character attacks automatically when enemies are in range</li>
+                    <li>Collect experience gems from defeated monsters to level up</li>
+                    <li>Choose powerful upgrades when you level up</li>
+                    <li>Survive as long as possible and aim for a high score</li>
+                    <li>On mobile, use the on-screen joystick to control movement</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mb-6 border-b pb-2" style="color: var(--apple-purple);">Tips & Strategies</h2>
+            <div class="prose max-w-none">
+                <p class="mb-4">Monster Survivors may seem simple at first, but mastering the game requires strategy and careful planning. Here are some tips to help you survive longer:</p>
+                <ul class="list-disc pl-5 space-y-2 mb-4">
+                    <li>Focus on movement speed early to help you dodge monster attacks</li>
+                    <li>Don't get cornered - always leave yourself an escape route</li>
+                    <li>Balance your upgrades between offense and defense</li>
+                    <li>Some weapons work better against certain monster types</li>
+                    <li>Prioritize area-of-effect attacks when facing large groups</li>
+                </ul>
+                <p>Remember, every run makes you stronger. Don't get discouraged if you die early - use what you've learned to improve in your next attempt!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-lg font-semibold">Monster Survivors</p>
+                    <p class="text-sm text-gray-400">© 2025 firstgame.site. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to make the "Play Now" button scroll to the game
+        document.querySelector('button').addEventListener('click', function() {
+            document.querySelector('.game-container').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        });
+    </script>
+</body>
+</html>
